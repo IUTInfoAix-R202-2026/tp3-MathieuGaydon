@@ -38,7 +38,8 @@ public class CoquilleAccueilController {
   /** Action du menu « Importer une nuit ». */
   @FXML
   private void onImporter() {
-    // TODO exercice 4 : titre "Importer une nuit", statut "Rubrique active : Importer une nuit".
+    // TODO exercice 4 : titre "Importer une nuit", statut "Rubrique active :
+    // Importer une nuit".
     labelTitre.setText("Importer une nuit");
     labelStatut.setText("Rubrique active : Importer une nuit");
   }
@@ -46,16 +47,18 @@ public class CoquilleAccueilController {
   /** Action du menu « Vue tabulaire ». */
   @FXML
   private void onVueTabulaire() {
-    // TODO exercice 4 : titre "Vue tabulaire des passages", statut "Rubrique active : Vue
+    // TODO exercice 4 : titre "Vue tabulaire des passages", statut "Rubrique active
+    // : Vue
     // tabulaire".
     labelTitre.setText("Vue tabulaire des passages");
-    labelStatut.setText("Rubrique active : Vue");
+    labelStatut.setText("Rubrique active : Vue tabulaire");
   }
 
   /** Action du menu « Paramètres ». */
   @FXML
   private void onParametres() {
-    // TODO exercice 4 : titre "Paramètres de l'application", statut "Rubrique active : Paramètres".
+    // TODO exercice 4 : titre "Paramètres de l'application", statut "Rubrique
+    // active : Paramètres".
     labelTitre.setText("Paramètres de l'application");
     labelStatut.setText("Rubrique active : Paramètres");
   }
@@ -65,6 +68,6 @@ public class CoquilleAccueilController {
   private void onQuitter() {
     // TODO exercice 4 : fermer la fenêtre courante.
     // On récupère le Stage via la Scene du labelTitre, puis on appelle close().
-
+    labelTitre.getScene().getWindow().hide();
   }
 }

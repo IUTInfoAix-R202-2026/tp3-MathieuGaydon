@@ -6,7 +6,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -129,7 +128,6 @@ class CoquilleAccueilControllerTest {
         .isEqualTo("Paramètres de l'application");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(8)
   void cliquer_sur_un_menu_met_a_jour_le_label_de_la_barre_de_statut(FxRobot robot) {
